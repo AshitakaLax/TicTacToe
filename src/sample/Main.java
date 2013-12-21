@@ -18,6 +18,11 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+
+        Player temp = new Player();
+        temp.getScore();
+
+        System.out.println("hello Jen you Sexy Spicy girl.");
         launch(args);
     }
 }
