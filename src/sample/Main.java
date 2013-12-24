@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+/*public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -25,4 +25,4 @@ public class Main extends Application {
         System.out.println("hello Jen you Sexy Spicy girl.");
         launch(args);
     }
-}
+}*/
