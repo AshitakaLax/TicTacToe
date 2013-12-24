@@ -1,5 +1,7 @@
 package sample;
 
+import java.text.NumberFormat;
+
 /**
  * Created by jensbaby on 12/23/13.
  */
@@ -19,9 +21,10 @@ public class PiggyBank
     public void CheckBroken(){
         if(Broken==true)
         {
-            Savings=0.0;
-            System.out.println("You have broken the bank. The bank now contains $");
-            System.out.println(Savings);
+            NumberFormat formatter = NumberFormat.getCurrencyInstance();
+            Savings=0.00;
+            String moneyString = formatter.format(Savings);
+            System.out.println("You have broken the bank. The bank now contains "+ moneyString );
         }
     }
     public double CountSavings(){
@@ -46,16 +49,4 @@ public class PiggyBank
     }
 
 
-    public static void main (String[] args){
-        PiggyBank myBank=new PiggyBank();
-        int i;
-        for(i=0; i<5; i++)
-        {
-            double amount=i+2.5;
-            myBank.DepositMoney(amount);
-            System.out.println(myBank.CountSavings());
-        }
-        myBank.Smash();
-        myBank.CheckBroken();
-    }
 }

@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/*public class Main extends Application {
+public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -19,10 +19,20 @@ import javafx.stage.Stage;
 
     public static void main(String[] args) {
 
+        PiggyBank myBank=new PiggyBank();
+        int i;
+        for(i=0; i<5; i++)
+        {
+            double amount=i+2.5;
+            myBank.DepositMoney(amount);
+            System.out.println(myBank.CountSavings());
+        }
+        myBank.Smash();
+        myBank.CheckBroken();
         Player temp = new Player();
         temp.getScore();
 
         System.out.println("hello Jen you Sexy Spicy girl.");
-        launch(args);
+//        launch(args);
     }
-}*/
+}
